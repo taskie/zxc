@@ -53,5 +53,5 @@ _testmain.go
 /cmd/zxc/zxc
 /test/coverage
 /vendor
-
+/images/dependency.png
 /tmp

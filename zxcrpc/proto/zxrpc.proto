@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+service ZxcRPC {
+  rpc DidStartJob (JobMessage) returns (Server) {}
+  rpc DidEndJob (JobResultMessage) returns (Server) {}
+}
+
+message Client {
+  string name = 1;
+}
+
+message Server {
+  string name = 1;
+}
+
+message Job {
+  string name = 1;
+  repeated string command = 2;
+}
+
+message JobMessage {
+  Job job = 1;
+  Client client = 2;
+}
+
+message JobResultMessage {
+  Job job = 1;
+  Client client = 2;
+  int32 exit_status = 3;
+}

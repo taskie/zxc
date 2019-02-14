@@ -1,10 +1,6 @@
-# zx
+# zxc
 
 zepto executor
-
-## dependency
-
-![dependency](images/dependency.png)
 
 ## license
 
