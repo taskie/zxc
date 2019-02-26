@@ -3,6 +3,7 @@
 CMD_DIR := cmd/zxc
 
 build:
+	$(MAKE) -C zxcrpc build
 	go build -v -ldflags "-s -w"
 	$(MAKE) -C $(CMD_DIR) build
 
